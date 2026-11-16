@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Шымкентте пәтерді кілтке дейін жөндеу — «Potolok Shymkent»</title>
+<meta name="description" content="Пәтерді кілтке дейін жөндеу: смета мен мерзім шартта бекітіледі. Бөлменің бетоннан дайын интерьерге дейін қалай өзгеретінін көріп, бағасын есептеңіз.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F3F2EE">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Пәтерді кілтке дейін жөндеу — «Potolok Shymkent»">
+<meta property="og:description" content="Бетон қораптан дайын пәтерге дейін. Смета мен мерзім — шартта.">
+<meta property="og:image" content="../img/room-poster.webp">
+<link rel="preload" href="../fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../styles.css?v=2">
+<style>:root{--tape:#C4302B;--tape-dark:#992522}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Potolok Shymkent — ремонт квартир", "address": {"@type": "PostalAddress", "streetAddress": "Шымкент", "addressLocality": "Шымкент", "addressCountry": "KZ"}, "telephone": "+77055470106"}</script>
+<!-- Яндекс Метрика: вставить счётчик клиента. Цели: phone, whatsapp, telegram, form -->
+</head>
+<body>
+
+<p class="demo-note">Бұл — «Potolok Shymkent» компаниясына арналған сайттың үлгісі, ресми сайты емес. Бағалар мен мәтіндер үлгі ретінде берілген. Жасаған: Толыбай Уахит.</p>
+
+<header class="top">
+  <a class="brand" href="#" aria-label="Potolok Shymkent, басты бет"><span class="brand-mark" aria-hidden="true"></span>Potolok Shymkent</a>
+  <nav class="nav" aria-label="Бөлімдер">
+    <a href="#calc">Бағасы</a>
+    <a href="#steps">Кезеңдер</a>
+    <a href="#included">Не кіреді</a>
+    <a href="#contact">Байланыс</a>
+  </nav>
+  <a class="lang" href="../" lang="ru" aria-label="Русская версия">Рус</a>
+  <a class="top-phone" href="tel:+77055470106" data-goal="phone">+7 (705) 547-01-06</a>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-copy">
+    <h1>Шымкентте еуро жөндеу және төбелер — кілтке дейін</h1>
+    <p class="lead">Жөндеу бағасын бір минутта есептеп, есепті WhatsApp-қа жіберіңіз. Смета мен тапсыру мерзімі шартта жазылады.</p>
+    <div class="hero-cta">
+      <a class="btn btn-solid" href="#calc">Бағасын есептеу</a>
+      <a class="btn btn-ghost" href="https://wa.me/77055470106" target="_blank" rel="noopener" data-goal="whatsapp">WhatsApp-қа жазу</a>
+    </div>
+  </div>
+
+  <div class="room">
+    <div class="room-view" id="room-view">
+      <img class="room-poster" id="room-poster" src="../img/room-poster.webp" width="1000" height="750" alt="Жөндеуден кейінгі бөлме: түрлі түсті қабырға, паркет, диван, сөре және торшер">
+    </div>
+    <div class="stage" id="stage" hidden>
+      <div class="stage-head">
+        <span class="stage-name" id="stage-name" aria-live="polite">Дайын бөлме</span>
+        <span class="stage-week" id="stage-week">8-апта</span>
+      </div>
+      <input id="stage-range" type="range" min="0" max="100" step="1" value="100" aria-label="Жөндеу кезеңі: бетоннан дайын бөлмеге дейін">
+      <div class="stage-ends" aria-hidden="true"><span>Бетон</span><span>Дайын</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="calc" id="calc">
+  <div class="calc-intro">
+    <h2>Жөндеуіңіз қанша тұрады</h2>
+    <p>Жұмыс құны, материалсыз. Нақты сметаны тегін өлшеуден кейін жасап, шартта бекітеміз.</p>
+  </div>
+
+  <form class="calc-form" onsubmit="return false">
+    <div class="field">
+      <label for="area">Пәтер ауданы</label>
+      <output id="area-out" for="area">60&nbsp;м²</output>
+      <input id="area" type="range" min="25" max="150" step="5" value="60">
+      <div class="range-ends" aria-hidden="true"><span>25&nbsp;м²</span><span>150&nbsp;м²</span></div>
+    </div>
+
+    <fieldset class="field">
+      <legend>Қандай жөндеу керек</legend>
+      <div class="types">
+        <label><input type="radio" name="type" value="cosmetic"><span class="type-name">Косметикалық</span><span class="type-note">Тұсқағаз, сырлау, еден. Қабырға мен электр сымдары өзгермейді.</span><span class="type-price">18 000 ₸/м² бастап</span></label>
+        <label><input type="radio" name="type" value="capital" checked><span class="type-name">Күрделі</span><span class="type-note">Бәрі басынан: электр, сантехника, еден құю, әрлеу.</span><span class="type-price">45 000 ₸/м² бастап</span></label>
+        <label><input type="radio" name="type" value="design"><span class="type-name">Дизайн-жоба бойынша</span><span class="type-note">Сіздің жобаңыз бойынша күрделі жөндеу, авторлық қадағалаумен.</span><span class="type-price">75 000 ₸/м² бастап</span></label>
+      </div>
+    </fieldset>
+
+    <div class="result">
+      <dl>
+        <div><dt>Жұмыс</dt><dd id="sum" aria-live="polite">2 700 000 ₸ бастап</dd></div>
+        <div><dt>Мерзімі</dt><dd id="term">шамамен 9 апта</dd></div>
+      </dl>
+      <a class="btn btn-solid" id="wa-calc" href="https://wa.me/77055470106" target="_blank" rel="noopener" data-goal="whatsapp">Есепті WhatsApp-қа жіберу</a>
+    </div>
+  </form>
+</section>
+
+<section class="steps" id="steps">
+  <h2>Жөндеу қалай жүреді</h2>
+  <ol class="steps-list">
+    <li><span class="when">1-күн</span><h3>Өлшеу және смета</h3><p>Инженер пәтерді өлшеп, екі күн ішінде әр жұмыс бойынша смета жібереді.</p></li>
+    <li><span class="when">3-күн</span><h3>Шарт</h3><p>Бағаны, кезең бойынша төлем кестесін және тапсыру күнін бекітеміз.</p></li>
+    <li><span class="when">1–3-апта</span><h3>Қара жұмыстар</h3><p>Бұзу жұмыстары, электр, сантехника, еден құю және сылақ.</p></li>
+    <li><span class="when">4–7-апта</span><h3>Таза әрлеу</h3><p>Сырлау, плитка, еден, есіктер. Әр жұма сайын фотоесеп.</p></li>
+    <li><span class="when">8-апта</span><h3>Тапсыру</h3><p>Тазалау, тізім бойынша тексеру және акт. Кілтті өзіңізге қайтарамыз.</p></li>
+  </ol>
+</section>
+
+<section class="included" id="included">
+  <h2>Бағаға не кіреді, не кірмейді</h2>
+  <div class="incl-grid">
+    <div>
+      <h3>Кіреді</h3>
+      <ul class="yes">
+        <li>Смета бойынша барлық жұмыс және нысандағы прораб</li>
+        <li>Қара материалдарды сатып алу және жеткізу</li>
+        <li>Қоқысты шығару және жөндеуден кейін тазалау</li>
+        <li>Аптасына бір рет фотоесеп</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Бөлек төленеді</h3>
+      <ul class="no">
+        <li>Әрлеу материалдары: плитка, бояу, еден, есіктер</li>
+        <li>Жиһаз, техника және жарық</li>
+        <li>Дизайн-жоба, егер ол әлі жоқ болса</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <h2>Шартқа дейін жиі қойылатын сұрақтар</h2>
+  <div class="faq-list">
+    <details><summary>Баға шынымен өспей ме?</summary><p>Шарттағы смета түпкілікті. Ол тек өзіңіз жұмыс қосқанда ғана, қосымша келісім бойынша өзгереді.</p></details>
+    <details><summary>Үлгермесеңіздер ше?</summary><p>Кешіктірілген әр күн үшін айыппұл мөлшері шартта жазылған.</p></details>
+    <details><summary>Қалай төлеймін?</summary><p>Кезең бойынша: материалға аванс, содан кейін қара жұмыстардан соң және әрлеуден соң.</p></details>
+    <details><summary>Нысанға келіп көруге бола ма?</summary><p>Кез келген жұмыс күні. Прорабқа алдын ала айтыңыз, ол бәрін көрсетеді.</p></details>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-info">
+    <h2>Өлшеу тегін, әлі таңдап жүрсеңіз де</h2>
+    <dl>
+      <div><dt>Кеңсе</dt><dd>Шымкент</dd></div>
+      <div><dt>Жұмыс уақыты</dt><dd>Дс–Сб, 9:00–19:00</dd></div>
+      <div><dt>Телефон</dt><dd><a href="tel:+77055470106" data-goal="phone">+7 (705) 547-01-06</a></dd></div>
+    </dl>
+    <div class="links"><a class="btn btn-ghost" href="https://2gis.kz/shymkent/firm/70000001067097236" target="_blank" rel="noopener">2ГИС-те ашу</a></div>
+  </div>
+
+  <form class="lead-form" id="lead-form" novalidate>
+    <h3>Өлшеуге жазылу</h3>
+    <p>Жұмыс күні ішінде қайта қоңырау шаламыз.</p>
+    <label for="f-name">Атыңыз кім</label>
+    <input id="f-name" name="name" type="text" autocomplete="given-name" required>
+    <label for="f-tel">Телефон</label>
+    <input id="f-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+    <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label class="consent"><input type="checkbox" name="agree" required><span>Жеке деректерді <a href="#policy">саясатқа</a> сәйкес өңдеуге келісемін</span></label>
+    <p class="form-error" id="form-error" role="alert" hidden></p>
+    <button class="btn btn-solid" type="submit">Өлшеуге жазылу</button>
+    <p class="form-done" id="form-done" role="status" hidden>Өлшеуге жазылдыңыз. Жұмыс күні ішінде қайта қоңырау шаламыз.</p>
+  </form>
+</section>
+
+</main>
+
+<footer class="foot" id="policy">
+  <p>«Potolok Shymkent» — компания деректемелері</p>
+  <p><a href="#policy">Жеке деректерді өңдеу саясаты</a></p>
+</footer>
+
+<nav class="dock" aria-label="Жылдам байланыс">
+  <a href="tel:+77055470106" data-goal="phone">Қоңырау</a>
+  <a href="https://wa.me/77055470106" target="_blank" rel="noopener" data-goal="whatsapp" id="wa-dock">WhatsApp</a>
+  <a href="#contact">Өлшеу</a>
+</nav>
+
+<script type="importmap">{"imports":{"three":"../vendor/three.module.js","three/addons/":"../vendor/addons/"}}</script>
+<script>window.SITE={"wa": "77055470106", "currency": "₸", "prices": {"cosmetic": 18000, "capital": 45000, "design": 75000}, "accent": "#C4302B", "form": "whatsapp", "endpoint": "", "phone": "+7 (705) 547-01-06", "name": "Potolok Shymkent"}</script>
+<script src="../app.js?v=4" defer></script>
+<script type="module" src="../room3d.js?v=3"></script>
+</body>
+</html>
